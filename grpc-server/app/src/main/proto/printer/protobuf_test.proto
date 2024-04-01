@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "basic.grpc.printer";
+
+package printer;
+
+service Printer {
+  rpc PrintThis (Mensaje) returns (Mensaje) {}
+}
+
+message Mensaje {
+    string printThis = 1;
+}
