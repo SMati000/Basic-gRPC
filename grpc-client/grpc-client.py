@@ -17,7 +17,11 @@ def run():
         stub = pb2_grpc.PrinterStub(channel)
         response = stub.PrintThis(pb2.Mensaje(printThis='you'))
         print("Printer client received: " + response.printThis)
+<<<<<<< HEAD
         print("Printer client received: " + response.printThis)
+=======
+        print("Printer client received: sadsadasd")
+>>>>>>> main
 
 if __name__ == '__main__':
     main()
